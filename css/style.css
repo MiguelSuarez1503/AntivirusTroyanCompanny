@@ -3,7 +3,10 @@ body {
     background-color: #f0f0f0;
     text-align: center;
     padding-top: 50px;
+    margin-bottom: 60px;
+    position: relative;
 }
+
 .container {
     background-color: white;
     width: 450px;
@@ -12,7 +15,9 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: auto;
 }
-.btn {
+
+/* Estilos para los botones (incluyendo el de inicio) */
+a button.btn, a button.btn-inicio { /* Selector más específico */
     background-color: #4CAF50;
     color: white;
     padding: 15px 32px;
@@ -22,10 +27,23 @@ body {
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
+    border: none; /* Asegúrate de que no haya borde */
+    outline: none; /* Opcional: para quitar el contorno al enfocar */
 }
-.btn:hover {
+
+a button.btn:hover, a button.btn-inicio:hover { /* Selector más específico para el hover */
     background-color: #45a049;
 }
+
+/* Estilos específicos para el botón de inicio (posición fija) */
+a button.btn-inicio {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
 .form-container {
     width: 400px;
     margin: auto;
@@ -34,11 +52,13 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .form-container label {
     font-size: 14px;
     display: block;
     margin-bottom: 8px;
 }
+
 .form-container input {
     width: 100%;
     padding: 10px;
