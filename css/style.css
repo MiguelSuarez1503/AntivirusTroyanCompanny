@@ -67,3 +67,13 @@ a button.btn-inicio {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+.corner-img {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px; /* puedes ajustar el tamaño */
+    height: auto;
+    z-index: 1000;
+    opacity: 0.9;
+}
+
