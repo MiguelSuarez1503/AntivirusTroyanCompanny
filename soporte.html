@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Soporte - Looney Troyans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+<style>   
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header img {
+        max-height: 50px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .faq-section {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-item {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .faq-question {
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .faq-question:hover {
+        background-color: #e8e8e8;
+    }
+
+    .faq-answer {
+        padding: 15px;
+        display: none;
+        background-color: white;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+        margin-bottom: 20px;
+    }
+
+    .btn-inicio {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        margin: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-inicio:hover {
+        background-color: #45a049;
+    }
+
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+</style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('.faq-question');
+            questions.forEach(question => {
+                question.addEventListener('click', function () {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo Looney Troyans">
+        <span><strong>Centro de Soporte - Antivirus Web</strong></span>
+    </header>
+
+    <a href="index.jsp">
+        <button class="btn-inicio">🏠 Inicio</button>
+    </a>
+
+    <div class="faq-section">
+        <h2>Preguntas Frecuentes</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Por qué no puedo iniciar sesión?</button>
+            <div class="faq-answer">Verifica tus credenciales y que tu cuenta esté activada. Intenta restablecer tu contraseña si es necesario.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Cómo puedo registrar una cuenta nueva?</button>
+            <div class="faq-answer">Ve a la página de registro, completa tus datos y confirma tu cuenta desde el correo electrónico.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Olvidé mi contraseña, qué hago?</button>
+            <div class="faq-answer">En la página de inicio de sesión, haz clic en "¿Olvidaste tu contraseña?" y sigue las instrucciones.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Por qué el escaneo del antivirus no funciona?</button>
+            <div class="faq-answer">Verifica tu conexión a internet y que hayas iniciado sesión correctamente. Si el problema persiste, contacta soporte.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Cómo puedo eliminar mi cuenta?</button>
+            <div class="faq-answer">Puedes solicitar la eliminación de tu cuenta mediante el formulario de soporte.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Qué datos recopila la aplicación?</button>
+            <div class="faq-answer">Solo los necesarios para el servicio, como nombre, correo y actividad. Consulta nuestra política de privacidad.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Qué navegadores son compatibles?</button>
+            <div class="faq-answer">Se recomienda usar Chrome, Firefox o Edge en sus versiones más recientes.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Puedo usar la app en mi celular?</button>
+            <div class="faq-answer">Sí, aunque recomendamos la versión de escritorio para una mejor experiencia.</div>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contactar a Soporte</h2>
+        <form action="enviar_soporte.jsp" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto" required>
+                <option value="">Selecciona un asunto</option>
+                <option value="problema_tecnico">Problema técnico</option>
+                <option value="cuenta">Problema con mi cuenta</option>
+                <option value="facturacion">Facturación y pagos</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+    </div>
+</body>
+</html>
