@@ -111,44 +111,9 @@
   </div>
 </div>
 
-<button id="chat-button" onclick="toggleChat()">💬</button>
+<button id="chat-button" onclick="toggleChat()">"img/logo_troyan.png"</button>
 
-<!-- Chatbot JS -->
-<script>
-  function toggleChat() {
-    const chat = document.getElementById("chat-container");
-    chat.style.display = (chat.style.display === "none" || chat.style.display === "") ? "flex" : "none";
-  }
 
-  function sendChat() {
-    const input = document.getElementById("user-input");
-    const msg = input.value.trim();
-    if (!msg) return;
-    appendMessage(msg, 'user');
-
-    const response = getBotResponse(msg);
-    setTimeout(() => appendMessage(response, 'bot'), 500);
-    input.value = '';
-  }
-
-  function appendMessage(text, sender) {
-    const chat = document.getElementById("chat-messages");
-    const div = document.createElement("div");
-    div.className = sender === 'user' ? 'user-msg' : 'bot-msg';
-    div.textContent = text;
-    chat.appendChild(div);
-    chat.scrollTop = chat.scrollHeight;
-  }
-
-  function getBotResponse(input) {
-    input = input.toLowerCase();
-    if (input.includes("hola")) return "¡Hola! ¿En qué puedo ayudarte?";
-    if (input.includes("descargar")) return "Puedes descargar el antivirus desde la sección 'Descargas'.";
-    if (input.includes("gracias")) return "¡De nada! 😊";
-    if (input.includes("problema") || input.includes("error")) return "Lo siento, por favor describe el problema y te ayudaré.";
-    return "Lo siento, no entendí eso. ¿Puedes repetirlo?";
-  }
-</script>
 <body>
     <!-- Botón de inicio que redirige a la página principal -->
     <a href="index.html">
