@@ -37,4 +37,5 @@ a button.btn:hover, a button.btn-inicio:hover {
 .corner-img {
     filter: drop-shadow(0 0 6px #44ff66);
     opacity: 0.85;
+    width: 100 px;
 }
