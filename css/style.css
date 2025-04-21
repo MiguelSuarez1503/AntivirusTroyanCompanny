@@ -1,79 +1,40 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #111811; /* verde oscuro */
+    color: #aaffaa; /* texto verde claro */
     text-align: center;
     padding-top: 50px;
     margin-bottom: 60px;
     position: relative;
 }
 
-.container {
-    background-color: white;
-    width: 450px;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
+.container, .form-container {
+    background-color: #1b2a1b;
+    border: 2px solid #44ff66;
+    box-shadow: 0 0 15px #22ff44;
 }
 
-/* Estilos para los botones (incluyendo el de inicio) */
-a button.btn, a button.btn-inicio { /* Selector más específico */
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none; /* Asegúrate de que no haya borde */
-    outline: none; /* Opcional: para quitar el contorno al enfocar */
+a button.btn, a button.btn-inicio {
+    background-color: transparent;
+    color: #44ff66;
+    border: 2px solid #44ff66;
+    box-shadow: 0 0 10px #22ff44;
+    transition: all 0.3s ease-in-out;
 }
 
-a button.btn:hover, a button.btn-inicio:hover { /* Selector más específico para el hover */
-    background-color: #45a049;
-}
-
-/* Estilos específicos para el botón de inicio (posición fija) */
-a button.btn-inicio {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-}
-
-.form-container {
-    width: 400px;
-    margin: auto;
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-container label {
-    font-size: 14px;
-    display: block;
-    margin-bottom: 8px;
+a button.btn:hover, a button.btn-inicio:hover {
+    background-color: #223322;
+    color: #aaffaa;
+    box-shadow: 0 0 15px #66ff88;
 }
 
 .form-container input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.corner-img {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 100px; /* puedes ajustar el tamaño */
-    height: auto;
-    z-index: 1000;
-    opacity: 0.9;
+    background-color: #0f1a0f;
+    color: #aaffaa;
+    border: 1px solid #44ff66;
 }
 
+.corner-img {
+    filter: drop-shadow(0 0 6px #44ff66);
+    opacity: 0.85;
+}
