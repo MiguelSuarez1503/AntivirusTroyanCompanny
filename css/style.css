@@ -38,7 +38,7 @@ a button.btn:hover, a button.btn-inicio:hover {
     width: 100px;
     display: block;
     margin: 0 auto;
-    margin-top: -30px; /* Ajusta si quieres más arriba o más abajo */
+    margin-top: 30px; /* Ajusta si quieres más arriba o más abajo */
     filter: drop-shadow(0 0 6px #44ff66);
     opacity: 0.85;
 }
