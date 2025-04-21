@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- SEO -->
+    <!-- SEO -->
     <meta name="description" content="Antivirus Troyan: protege tu equipo con el escaneo más seguro del mercado. Descarga gratis.">
     <meta name="keywords" content="antivirus, seguridad, escaneo, computadora, protección, troyan">
     <meta name="author" content="Troyan Company">
 
     <!-- Verificación de Google-->
     <meta name="google-site-verification" content="mfH4eSYTdbY6GiWVA3_4X-oT4VgE_j4KTxnv761sD-k" />
-    <title>Antivirus Troyan Companny</title>
+    <title>Antivirus Troyan Company</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         .btn-inicio {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        margin: 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    .btn-inicio:hover {
-        background-color: #45a049;
+        .btn-inicio:hover {
+            background-color: #45a049;
+        }
+
+        .logo-superior {
+            display: block;
+            margin: 40px auto 20px;
+            width: 120px;
+            filter: drop-shadow(0 0 6px #44ff66);
+            opacity: 0.85;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo-superior:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Logo como botón de inicio -->
+    <a href="index.html" title="Volver al inicio">
+        <img src="img/logo_troyan.png" alt="Logo Troyan" class="logo-superior">
+    </a>
+
     <div class="container">
-        <h2>🛡️ Antivirus Troyan Companny 🛡️ </h2>
+        <h2>🛡️ Antivirus Troyan Company 🛡️</h2>
         <br><br>
-        <!-- Botón "Descargar" que redirige a sistema.jsp -->
         <p>Descarga el antivirus</p>
         <a href="sistema.html" class="btn">Descargar</a>
         <br><br>
@@ -42,7 +62,9 @@
         <a href="soporte.html" class="btn">Soporte</a>
         <br><br>
     </div>
-    <img src="img/logo_troyan.png" alt="Logo Troyan" class="corner-img" width= "100">
+
+</body>
+</html>
 
 </body>
 </html>
