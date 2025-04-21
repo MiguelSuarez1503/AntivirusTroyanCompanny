@@ -35,7 +35,12 @@ a button.btn:hover, a button.btn-inicio:hover {
 }
 
 .corner-img {
+    width: 100px;
+    display: block;
+    margin: 0 auto 20px auto; /* Centrado horizontal y separación inferior */
     filter: drop-shadow(0 0 6px #44ff66);
     opacity: 0.85;
-    width: 100 px;
+    margin-top: -20px; /* Subir un poco la imagen */
+}
+
 }
