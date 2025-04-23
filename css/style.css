@@ -8,57 +8,100 @@ body {
     position: relative;
 }
 
-.container, .form-container {
+.container, .form-container, .faq-section, .contact-form {
     background-color: #1b2a1b;
     border: 2px solid #44ff66;
     box-shadow: 0 0 15px #22ff44;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-a button.btn, a button.btn-inicio {
-    background-color: transparent;
-    color: #44ff66;
-    border: 2px solid #44ff66;
-    box-shadow: 0 0 10px #22ff44;
-    transition: all 0.3s ease-in-out;
+.faq-item {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-a button.btn:hover, a button.btn-inicio:hover {
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
     background-color: #223322;
+    border: 1px solid #44ff66;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     color: #aaffaa;
-    box-shadow: 0 0 15px #66ff88;
+    transition: background-color 0.3s;
 }
 
-.form-container input {
+.faq-question:hover {
+    background-color: #2a442a;
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none;
+    background-color: #1b2a1b;
+    border-left: 1px solid #44ff66;
+    border-right: 1px solid #44ff66;
+    border-bottom: 1px solid #44ff66;
+    border-radius: 0 0 5px 5px;
+    color: #aaffaa;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
     background-color: #0f1a0f;
     color: #aaffaa;
     border: 1px solid #44ff66;
 }
 
-.corner-img {
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px; /* Ajusta si quieres más arriba o más abajo */
-    filter: drop-shadow(0 0 6px #44ff66);
-    opacity: 0.85;
+button.btn, button.btn-inicio {
+    background-color: transparent;
+    color: #44ff66;
+    border: 2px solid #44ff66;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #22ff44;
+    transition: all 0.3s ease-in-out;
 }
+
+button.btn:hover, button.btn-inicio:hover {
+    background-color: #223322;
+    color: #aaffaa;
+    box-shadow: 0 0 15px #66ff88;
+}
+
 a {
-  color: #00ffcc; /* color principal */
-  text-decoration: none;
-  transition: color 0.2s ease;
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:visited {
-  color: #00ccaa; /* tono más oscuro si ya fue visitado */
+    color: #00ccaa;
 }
 
 a:hover {
-  color: #ffffff; /* cambia al pasar el mouse */
+    color: #ffffff;
 }
 
 a:active {
-  color: #ff0055; /* cuando lo presionas */
+    color: #ff0055;
 }
 
-
+.logo-superior {
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+    filter: drop-shadow(0 0 6px #44ff66);
+    opacity: 0.85;
 }
