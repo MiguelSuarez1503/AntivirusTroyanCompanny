@@ -5,6 +5,114 @@
     <title>Soporte - Looney Troyans</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111811; /* fondo oscuro */
+            color: #aaffaa; /* texto verde claro */
+            text-align: center;
+            padding-top: 50px;
+            margin-bottom: 60px;
+        }
+
+        .logo-superior {
+            width: 120px;
+            filter: drop-shadow(0 0 6px #44ff66);
+            margin-bottom: 30px;
+        }
+
+        .faq-section, .contact-form {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #1b2a1b;
+            border: 2px solid #44ff66;
+            box-shadow: 0 0 15px #22ff44;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #0f1a0f;
+            color: #aaffaa;
+            border: 1px solid #44ff66;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: left;
+        }
+
+        .faq-question:hover {
+            background-color: #223322;
+        }
+
+        .faq-answer {
+            display: none;
+            text-align: left;
+            background-color: #111811;
+            padding: 15px;
+            border-left: 2px solid #44ff66;
+            border-right: 2px solid #44ff66;
+            border-bottom: 2px solid #44ff66;
+            border-radius: 0 0 5px 5px;
+            margin-bottom: 20px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            background-color: #0f1a0f;
+            color: #aaffaa;
+            border: 1px solid #44ff66;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .btn {
+            background-color: transparent;
+            color: #44ff66;
+            border: 2px solid #44ff66;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px #22ff44;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #223322;
+            color: #aaffaa;
+            box-shadow: 0 0 15px #66ff88;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:visited {
+            color: #00ccaa;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        a:active {
+            color: #ff0055;
+        }
+
+        header {
+            color: #aaffaa;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const questions = document.querySelectorAll('.faq-question');
@@ -20,7 +128,7 @@
 <body>
 
     <header>
-        <span><strong>Centro de Soporte - Antivirus Web</strong></span>
+        <strong>Centro de Soporte - Antivirus Web</strong>
     </header>
 
     <a href="index.html" title="Volver al inicio">
