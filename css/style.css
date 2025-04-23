@@ -42,5 +42,23 @@ a button.btn:hover, a button.btn-inicio:hover {
     filter: drop-shadow(0 0 6px #44ff66);
     opacity: 0.85;
 }
+a {
+  color: #00ffcc; /* color principal */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:visited {
+  color: #00ccaa; /* tono más oscuro si ya fue visitado */
+}
+
+a:hover {
+  color: #ffffff; /* cambia al pasar el mouse */
+}
+
+a:active {
+  color: #ff0055; /* cuando lo presionas */
+}
+
 
 }
