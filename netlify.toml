@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/*.zip"
+  [headers.values]
+    Content-Disposition = "attachment"
